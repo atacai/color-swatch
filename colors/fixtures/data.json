@@ -1,0 +1,82 @@
+[
+{
+  "model": "colors.color",
+  "pk": 1,
+  "fields": {
+    "name": "rgb"
+  }
+},
+{
+  "model": "colors.color",
+  "pk": 2,
+  "fields": {
+    "name": "hsl"
+  }
+},
+{
+  "model": "colors.range",
+  "pk": 1,
+  "fields": {
+    "name": "red",
+    "range_start": 0,
+    "range_stop": 255,
+    "suffix": "",
+    "color": 1
+  }
+},
+{
+  "model": "colors.range",
+  "pk": 2,
+  "fields": {
+    "name": "green",
+    "range_start": 0,
+    "range_stop": 255,
+    "suffix": "",
+    "color": 1
+  }
+},
+{
+  "model": "colors.range",
+  "pk": 3,
+  "fields": {
+    "name": "blue",
+    "range_start": 0,
+    "range_stop": 255,
+    "suffix": "",
+    "color": 1
+  }
+},
+{
+  "model": "colors.range",
+  "pk": 4,
+  "fields": {
+    "name": "hue",
+    "range_start": 0,
+    "range_stop": 360,
+    "suffix": "",
+    "color": 2
+  }
+},
+{
+  "model": "colors.range",
+  "pk": 5,
+  "fields": {
+    "name": "saturation",
+    "range_start": 0,
+    "range_stop": 100,
+    "suffix": "%",
+    "color": 2
+  }
+},
+{
+  "model": "colors.range",
+  "pk": 6,
+  "fields": {
+    "name": "lightness",
+    "range_start": 0,
+    "range_stop": 100,
+    "suffix": "%",
+    "color": 2
+  }
+}
+]
