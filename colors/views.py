@@ -16,7 +16,7 @@ class ColorSpaceAPIView(APIView):
         for i in range(settings.DEFAULT_SWATCHES_SET):
             color = ColorSpace.objects.get(id=random.choice(color_ids))
             res = {'type': color.name}
-            for r in color.ranges.all():
+            for r in color.attributes.all():
                 res[r.name] = '%(value)s%(suffix)s' % {'value': random.randint(r.range_start, r.range_stop), 'suffix': r.suffix}
             result.append(res)
         return Response(result, status=status.HTTP_200_OK)
