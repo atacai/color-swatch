@@ -1,14 +1,14 @@
 from django.contrib import admin
-from .models        import ColorSpace, Range
+from .models        import ColorSpace, Attribute
 
 
-class RangeInLine(admin.TabularInline):
-    model = Range
+class AttributeInLine(admin.TabularInline):
+    model = Attribute
     extra = 0
 
 
 class ColorSpaceAdmin(admin.ModelAdmin):
-    inlines = (RangeInLine,)
+    inlines = (AttributeInLine,)
 
 
 admin.site.register(ColorSpace, ColorSpaceAdmin)
