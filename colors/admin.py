@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models        import Color, Range
+from .models        import ColorSpace, Range
 
 
 class RangeInLine(admin.TabularInline):
@@ -7,8 +7,8 @@ class RangeInLine(admin.TabularInline):
     extra = 0
 
 
-class ColorAdmin(admin.ModelAdmin):
+class ColorSpaceAdmin(admin.ModelAdmin):
     inlines = (RangeInLine,)
 
 
-admin.site.register(Color, ColorAdmin)
+admin.site.register(ColorSpace, ColorSpaceAdmin)
