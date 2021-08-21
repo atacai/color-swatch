@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Color(models.Model):
+class ColorSpace(models.Model):
     name = models.CharField(max_length=20)
 
     def __str__(self):
@@ -13,4 +13,4 @@ class Range(models.Model):
     range_start = models.IntegerField()
     range_stop = models.IntegerField()
     suffix = models.CharField(max_length=10, blank=True)
-    color = models.ForeignKey(Color, on_delete=models.CASCADE, related_name='ranges')
+    color_space = models.ForeignKey(ColorSpace, on_delete=models.CASCADE, related_name='ranges')
