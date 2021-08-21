@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import ColorAPIView
+from .views import ColorSpaceAPIView
 
 app_name = 'colors'
 urlpatterns = [
-    path('colors/', ColorAPIView.as_view(), name='index')
+    path('colors/', ColorSpaceAPIView.as_view(), name='index')
 ]
