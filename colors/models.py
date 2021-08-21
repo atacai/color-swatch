@@ -8,9 +8,9 @@ class ColorSpace(models.Model):
         return self.name
     
 
-class Range(models.Model):
+class Attribute(models.Model):
     name = models.CharField(max_length=20)
     range_start = models.IntegerField()
     range_stop = models.IntegerField()
     suffix = models.CharField(max_length=10, blank=True)
-    color_space = models.ForeignKey(ColorSpace, on_delete=models.CASCADE, related_name='ranges')
+    color_space = models.ForeignKey(ColorSpace, on_delete=models.CASCADE, related_name='attributes')
